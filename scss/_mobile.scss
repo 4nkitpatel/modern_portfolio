@@ -10,6 +10,15 @@
     .projects{
         grid-template-columns: repeat(3,1fr);
     }
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8%;
+        .contact-box{
+            width: 110%;
+            height: 100%;
+        }
+    }
 }
 
 //Tablets &  small Laptops
@@ -66,6 +75,19 @@
     .projects{
         grid-template-columns: repeat(2,1fr);
     }
+    main#contact h1{
+        margin-top: 10vh;
+    }
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        .contact-box{
+            width: 60%;
+            height: 100%;
+            margin: auto;
+
+        }
+    }
 }
 
 //smartphones
@@ -75,5 +97,36 @@
     }
     .projects{
         grid-template-columns: 1fr;
+    }
+    main#contact h1{
+        margin-top: 10vh;
+    }
+    main#contact{
+        padding: 0;
+    }
+    .contact-header{
+        .menu-btn{
+            position: absolute;
+            right: 1rem;
+            top: 0;
+        }
+    }
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        .contact-box{
+            width: 100%;
+            height: 100%;
+            margin: inherit;
+        }
+
+        #form-control{
+            .inline{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap:1rem;
+            }
+        }
+
     }
 }

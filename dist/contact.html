@@ -8,10 +8,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
     <link rel="stylesheet" href="css/main.css">
-    <title>About Me</title>
+    <title>Contact Me</title>
 </head>
 <body>
-    <header>
+    <header class="contact-header">
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
@@ -27,7 +27,7 @@
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item current">
+                <li class="nav-item">
                     <a href="about.html" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
@@ -36,42 +36,48 @@
                 <li class="nav-item">
                     <a href="project.html" class="nav-link">Project</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="contact.html" class="nav-link">Let's talk</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!--main content-->
-    <main id="about">
+    <main id="contact">
         <h1  class="animated slideInDown lg-heading">
-            About <span class="text-secondary">Me</span>
+            Contact <span class="text-secondary">Me</span>
         </h1>
         <h2 class="animated slideInRight sm-heading">
-            Let me tell you a few things...
+            I'm always looking for fun people to collaborate with. Drop me a line!
         </h2>
-        <div class="about-info">
-            <img src="img/myportrait.png" alt="Ankit Patel" class="bio-image">
-
-                <div class="bio">
-                <h3 class="text-secondary">BIO</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, iste.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, assumenda.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vel odio, pariatur eveniet molestiae laborum dolor, sunt id similique voluptatum aliquam quod ut. Nulla nesciunt, ipsam qui cupiditate, illo similique.</p>
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Ankit <span class="text-secondary">Patel</span></h2>
+                <div class="info">
+                    <i class="fa fa-phone"></i>
+                    +918652332936
+                </div>
+                <div class="info">
+                    <i class="far fa-envelope"></i>
+                    ankitpatel2600@gmail.com
+                </div>
+                <div class="info">
+                    <i class="fa fa-map-marker"></i>
+                    Mumbai, MH, India
+                </div>
             </div>
 
-            <div class="job job-1">
-                <h3>123 Workshop</h3>
-                <h6>Full Stack Developer</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea mollitia quidem facere hic, veritatis quisquam quibusdam maxime accusamus vero atque.</p>
-            </div>
-            <div class="job job-2">
-                <h3>Designers ABC</h3>
-                <h6>Front End Developer</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea mollitia quidem facere hic, veritatis quisquam quibusdam maxime accusamus vero atque.</p>
-            </div>
-            <div class="job job-3">
-                <h3>Webworks</h3>
-                <h6>Graphics Designer</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea mollitia quidem facere hic, veritatis quisquam quibusdam maxime accusamus vero atque.</p>
+            <div class="form">
+                <form id="form-control" method="post" action="">
+                    <div class="inline">
+                        <input type="text" name="fname"  placeholder="First Name" class="form-content fname" required>
+                        <input type="text" name="lname" placeholder="Last Name" class="form-content lname" required>
+                    </div>
+                    <input type="text" name="email"  placeholder="Email" class="form-content email" required>
+                    <textarea  name="massage" rows="10" placeholder="Massage" class="form-content massage" required></textarea>
+
+                    <button class="form-content btn-submit">Send</button>
+                </form>
             </div>
         </div>
     </main>

@@ -151,6 +151,93 @@ main{
     color: #000;
 }
 
+
+//contact-page
+
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+
+    padding: 1rem 1rem;
+    .contact-box{
+        background: lighten($primary-color,5);
+        border: 1px solid $secondary-color;
+        &:hover{
+            box-shadow: 0 0 4px rgba(220,220,220,0.9);
+            @include easeOut;
+        }
+    }
+    #form-control{
+        .inline{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap:1rem;
+        }
+        .email{
+             width: 100%;
+        }
+        .massage{
+             width: 100%;
+        }
+    }
+    h2{
+        text-align: center;
+    }
+    .info{
+        margin: 1.5rem 1rem;
+    }
+
+    //form elements
+    .form{
+        border: 1px solid $secondary-color;
+        padding: 0 10px;
+        background: lighten($primary-color,5);
+        .form-content{
+            border: none;
+            outline: none;
+            margin-bottom:1rem;
+            background :transparent;
+            height: 3rem;
+            border-bottom: 2px solid lighten($primary-color,25);
+        }
+        &:hover{
+            box-shadow: 0 0 4px rgba(220,220,220,0.9);
+            @include easeOut;
+        }
+        ::-webkit-input-placeholder {
+            color:rgba(255,255,255,0.5);
+            font-size: 1rem;
+        }
+        input[type=text]{
+            color: lighten($primary-color,50);
+            font-size: 1rem;
+            font-family: cursive;
+        }
+        textarea[name=massage] {
+            color: lighten($primary-color,50);
+            font-size: 1rem;
+            font-family: cursive;
+        }
+        .btn-submit{
+            background-color: darken($primary-color,5);
+            padding: 0.7rem 0.7rem;
+            color: #fff;
+            text-align: center;
+            border-radius: 10%;
+            &:hover{
+                box-shadow: 0 0 4px;
+                color: $secondary-color;
+                @include easeOut;
+                cursor: pointer;
+            }
+        }
+        button{
+            display: flex;
+        }
+    }
+}
+
 #main-footer{
     text-align: center;
     padding: 1rem;
