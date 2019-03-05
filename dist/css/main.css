@@ -164,6 +164,20 @@ main {
     margin: auto;
     border-radius: 50%;
     border: #ffff66 3px solid; }
+    .about-info .bio-image:hover {
+      box-shadow: 0 0 10px; }
+  .about-info p {
+    text-align: justify; }
+    .about-info p .focus {
+      color: #ffff66; }
+    .about-info p a {
+      color: #c4c4c4; }
+      .about-info p a:hover {
+        text-decoration: underline; }
+  .about-info #intro {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    text-align: justify; }
   .about-info .bio {
     grid-area: bio;
     front-size: 1.5rem; }
@@ -269,6 +283,29 @@ main {
     .contact-container .form button {
       display: flex; }
 
+#resume .heading {
+  text-align: center;
+  margin-bottom: 1rem; }
+
+#resume h2 {
+  font-size: 18px;
+  margin-bottom: 1rem; }
+
+.resume-container {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  background-color: #777777;
+  padding: 1.5rem;
+  border-radius: 3%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); }
+  .resume-container .row {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 20px; }
+  .resume-container span {
+    font-weight: 600; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -330,7 +367,12 @@ main {
     .contact-container .contact-box {
       width: 60%;
       height: 100%;
-      margin: auto; } }
+      margin: auto; }
+  .resume-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: left; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -355,4 +397,16 @@ main {
     .contact-container #form-control .inline {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 1rem; } }
+      grid-gap: 1rem; }
+  #resume h2 {
+    font-size: 14px;
+    font-weight: 500; }
+  .resume-container .row {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: 20px; }
+  .resume-container .point {
+    text-align: center;
+    margin: 0 0 10px 0;
+    text-decoration: underline; } }
