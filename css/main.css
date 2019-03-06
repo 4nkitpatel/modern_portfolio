@@ -375,18 +375,18 @@ main {
     text-align: left; } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
+  /*main#home h1{
+        margin-top: 10vh;
+    }*/
   .projects {
     grid-template-columns: 1fr; }
-  main#contact h1 {
-    margin-top: 10vh; }
-  main#contact {
-    padding: 0; }
-  .contact-header .menu-btn {
-    position: absolute;
-    right: 1rem;
-    top: 0; }
   .contact-container {
     display: grid;
     grid-template-columns: 1fr; }
