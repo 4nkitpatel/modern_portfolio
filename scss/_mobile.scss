@@ -99,25 +99,42 @@
 
 //smartphones
 @include mediaSm{
-    main#home h1{
-        margin-top: 10vh;
+
+
+    main {
+    padding: 2rem;
+    #home h1 {
+      margin-top: 10vh;
     }
+
+    .lg-heading {
+      margin-top:1rem;
+      font-size: 5rem;
+    }
+}
+
+    /*main#home h1{
+        margin-top: 10vh;
+    }*/
     .projects{
         grid-template-columns: 1fr;
     }
-    main#contact h1{
-        margin-top: 10vh;
-    }
-    main#contact{
-        padding: 0;
-    }
-    .contact-header{
-        .menu-btn{
-            position: absolute;
-            right: 1rem;
-            top: 0;
-        }
-    }
+
+    //commented part is the try to make website responsiveness
+
+    // main#contact h1{
+    //     margin-top: 10vh;
+    // }
+    // main#contact{
+    //     padding: 0;
+    // }
+    // .contact-header{
+    //     .menu-btn{
+    //         position: absolute;
+    //         right: 1rem;
+    //         top: 0;
+    //     }
+    // }
     .contact-container{
         display: grid;
         grid-template-columns: 1fr;
