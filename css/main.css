@@ -260,18 +260,18 @@ main {
       transition: all 0.5s ease-out; }
     .contact-container .form ::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.5);
-      font-size: 1rem; }
-    .contact-container .form input[type=text] {
+      font-size: 1rem;
+      font-weight: lighter; }
+    .contact-container .form input[type=text], .contact-container .form input[name=email], .contact-container .form textarea[name=message] {
       color: #c4c4c4;
       font-size: 1rem;
-      font-family: cursive; }
-    .contact-container .form textarea[name=massage] {
-      color: #c4c4c4;
-      font-size: 1rem;
-      font-family: cursive; }
+      font-weight: 600; }
+    .contact-container .form textarea[name=message] {
+      font-size: 1.5rem;
+      width: 100%; }
     .contact-container .form .btn-submit {
       background-color: #373737;
-      padding: 0.7rem 0.7rem;
+      padding: 1rem 1rem;
       color: #fff;
       text-align: center;
       border-radius: 10%; }
@@ -281,7 +281,18 @@ main {
         transition: all 0.5s ease-out;
         cursor: pointer; }
     .contact-container .form button {
-      display: flex; }
+      display: flex;
+      float: left;
+      margin-left: 10px; }
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #848484;
+  color: #fff;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: none; }
 
 #resume .heading {
   text-align: center;
@@ -397,7 +408,7 @@ main {
     .contact-container #form-control .inline {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 1rem; }
+      grid-gap: 0; }
   #resume h2 {
     font-size: 14px;
     font-weight: 500; }

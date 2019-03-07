@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+    <link rel="icon" href="img/favicon.ico" type="image/gif">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
     <link rel="stylesheet" href="css/main.css">
     <title>Contact Me</title>
@@ -68,16 +68,19 @@
             </div>
 
             <div class="form">
+                <div class="alert">Your Message Has Been Sent</div>
                 <form id="form-control" method="post" action="">
                     <div class="inline">
-                        <input type="text" name="fname"  placeholder="First Name" class="form-content fname" required>
-                        <input type="text" name="lname" placeholder="Last Name" class="form-content lname" required>
+                        <input type="text" name="fname"  placeholder="First Name" class="form-content fname" id="fname" required>
+                        <input type="text" name="lname" placeholder="Last Name" class="form-content lname" id="lname" required>
                     </div>
-                    <input type="text" name="email"  placeholder="Email" class="form-content email" required>
-                    <textarea  name="massage" rows="10" placeholder="Massage" class="form-content massage" required></textarea>
-
-                    <button class="form-content btn-submit">Send</button>
+                    <input type="email" name="email"  placeholder="Email" class="form-content email" id="email" required>
+                    <textarea  name="message" placeholder="Message" class="form-content message" id="message" required></textarea>
+                    <button class="form-content btn-submit" type="submit">Send</button>
+                    <button class="form-content btn-submit" type="reset" value="Reset" id="reset">Reset</button>
                 </form>
+
+
             </div>
         </div>
     </main>
@@ -87,5 +90,9 @@
 </footer>
     <!--js file link-->
     <script src="js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script src="js/form.js"></script>
+
+    </script>
 </body>
 </html>
