@@ -100,18 +100,17 @@
 //smartphones
 @include mediaSm{
 
-
     main {
-    padding: 2rem;
-    #home h1 {
-      margin-top: 10vh;
-    }
+        padding: 2rem;
+        #home h1 {
+          margin-top: 10vh;
+        }
 
-    .lg-heading {
-      margin-top:1rem;
-      font-size: 5rem;
+        .lg-heading {
+          margin-top:1rem;
+          font-size: 5rem;
+        }
     }
-}
 
     /*main#home h1{
         margin-top: 10vh;
@@ -148,7 +147,7 @@
             .inline{
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-gap:1rem;
+                grid-gap: 0;
             }
         }
 

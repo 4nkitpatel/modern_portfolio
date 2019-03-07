@@ -227,20 +227,20 @@ main{
         ::-webkit-input-placeholder {
             color:rgba(255,255,255,0.5);
             font-size: 1rem;
+            font-weight: lighter;
         }
-        input[type=text]{
+        input[type=text],input[name=email],textarea[name=message]{
             color: lighten($primary-color,50);
             font-size: 1rem;
-            font-family: cursive;
+            font-weight: 600;
         }
-        textarea[name=massage] {
-            color: lighten($primary-color,50);
-            font-size: 1rem;
-            font-family: cursive;
+        textarea[name=message] {
+            font-size: 1.5rem;
+            width: 100%;
         }
         .btn-submit{
             background-color: darken($primary-color,5);
-            padding: 0.7rem 0.7rem;
+            padding: 1rem 1rem;
             color: #fff;
             text-align: center;
             border-radius: 10%;
@@ -253,10 +253,22 @@ main{
         }
         button{
             display: flex;
+            float: left;
+            margin-left: 10px;
         }
+
     }
 }
 
+.alert{
+    text-align: center;
+    padding: 10px;
+    background: lighten($primary-color,25);
+    color: #fff;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: none;
+}
 //resume page styles
 #resume{
 
