@@ -268,7 +268,8 @@ main {
       font-weight: 600; }
     .contact-container .form textarea[name=message] {
       font-size: 1.5rem;
-      width: 100%; }
+      width: 100%;
+      resize: none; }
     .contact-container .form .btn-submit {
       background-color: #373737;
       padding: 1rem 1rem;
